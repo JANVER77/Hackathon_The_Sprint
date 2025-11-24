@@ -64,5 +64,61 @@ body {
 
 .card:hover .buy {
     top: 0;
-    opacity: 1;
+    opacity: 1;}
+
+
+hr{
+    color:#FFF;
+}
+
+.titulo-principal {
+    font-family: 'Bebas Neue', sans-serif;
+    color:#FFF;
+    font-size: 80px;
+    pointer-events: none;
+}
+
+.subtitulo {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#FFF;
+}
+
+.parrafo {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    display: block;
+    background: #00D0FF;
+}
+
+.navbar-nav li {
+    color:#FFF
+}
+
+.menu {
+    background-color: #121212;
+
+}
+
+.t-menu{
+    color:#FFF;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.btn-logo {
+    box-shadow: 1px 2px 6px rgb(0,0,0,0.5);
+}
+
+.btn-logo:hover {
+    background-color: #FFF;
+    height: 100%;
 }
