@@ -1,5 +1,5 @@
 body {
-    background-color: #ccc;
+    background: linear-gradient(180deg, #f0f0f0, #ffffff);
 }
 .container {
     text-align: center;
@@ -64,8 +64,8 @@ body {
 
 .card:hover .buy {
     top: 0;
-    opacity: 1;}
-
+    opacity: 1;
+}
 
 hr{
     color:#FFF;
@@ -122,3 +122,10 @@ hr{
     background-color: #FFF;
     height: 100%;
 }
+
+#carouselDefinitivo img {
+    max-height: 700px;
+    object-fit: cover; 
+    object-position: center; 
+}
+
