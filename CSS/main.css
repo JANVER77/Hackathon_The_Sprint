@@ -1,0 +1,44 @@
+.container {
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    margin: 0 auto; /* Centra la tarjeta */
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra de la tarjeta */
+    transform: translateY(-10px); /* Efecto 3D */
+}
+
+.imgBox, .contentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card .buy {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #000;
+    text-decoration: none;
+    background: #FF2400;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.card:hover .buy {
+    top: 0;
+    opacity: 1;
+}
