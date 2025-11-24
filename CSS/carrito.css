@@ -1,0 +1,85 @@
+.envio-tag {
+  background: #d1d1d1; /* gris */
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+body {
+  background: #f8f9fa;
+  color: #121212;
+}
+
+.primary-color {
+  color: #00d0ff !important;
+}
+.accent-color {
+  color: #ff2400 !important;
+}
+
+/* Cards */
+.card-custom {
+  border: 2px solid #d1d1d1 !important;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Precio */
+.price-original {
+  text-decoration: line-through;
+  color: #121212;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.price {
+  color: #ff2400;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 4px !important;
+  display: block;
+}
+
+/* Botón Comprar */
+.btn-primary-custom {
+  background: #00d0ff;
+  color: #121212;
+  border: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.btn-primary-custom:hover {
+  background: #00bce6;
+  color: white;
+}
+
+/* Botones de cantidad */
+.btn-counter {
+  background: #121212; /* gris */
+  color: white; /* signo blanco */
+  width: 28px; /* más pequeño */
+  height: 28px;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  line-height: 1;
+}
+
+.btn-counter:hover {
+  background: #bcbcbc;
+  color: white;
+}
+
+.summary-total {
+  font-weight: bold;
+  color: #121212;
+}
+
+.list-group {
+  border-radius: 15px !important;
+}
