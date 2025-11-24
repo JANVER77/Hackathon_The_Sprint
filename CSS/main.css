@@ -1,5 +1,5 @@
 body {
-    background-color: #ccc;
+    background: linear-gradient(180deg, #f0f0f0, #ffffff);
 }
 .container {
     text-align: center;
@@ -66,3 +66,10 @@ body {
     top: 0;
     opacity: 1;
 }
+
+#carouselDefinitivo img {
+    max-height: 700px;
+    object-fit: cover; 
+    object-position: center; 
+}
+
