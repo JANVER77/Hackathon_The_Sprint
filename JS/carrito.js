@@ -11,37 +11,31 @@ function desincrementarProducto(element) {
 }
 
 function anadirCarrito(element) {
+  alert("Se añadió al carrito")
+  // Redireccionar la página al carrito
+  // window.location.href = "http://127.0.0.1:5500/carrito.html";
+  
   // Obtenemos el carrito del localStorage
   let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+  const nombre = element.previousElementSibling.previousElementSibling.textContent
+  const precio = element.previousElementSibling.textContent
+  
+  // http://127.0.0.1:5500/Assets/Img/jersey1_U.png
+  let url = new URL(element.parentNode.previousElementSibling.firstElementChild.src);
+  let path = url.pathname; // "/Assets/Img/jersey1_U.png"
+
   let nuevoProducto = {
-    nombre : "",
-    imagen: "",
-    precioFalso : "",
-    precio : "", 
+    nombre : nombre,
+    imagen: "." + path,
+    precioFalso : parseInt(precio.split("$")[1].replace(",", "")) * 1.28,
+    precio : parseInt(precio.split("$")[1].replace(",", "")), 
     cantidad: 1
   }
 
-  carrito.push(nuevoProducto);
+  // Push pero añade las cosas al principio
+  carrito.unshift(nuevoProducto);
   localStorage.setItem("carrito", JSON.stringify(carrito));
-}
-
-function ejemplo () {
-  console.log("ejemplo")
-  // Obtenemos el carrito del localStorage
-  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
-  let nuevoProducto = {
-    nombre : "Casco super genial",
-    imagen: "./ASSETS/IMG/casco3.png",
-    precioFalso: 35000,
-    precio : 21300, 
-    cantidad: 1
-  }
-
-  carrito.push(nuevoProducto);
-  localStorage.setItem("carrito", JSON.stringify(carrito));
-  actualizarVista()
 }
 
 function actualizarVista() {
