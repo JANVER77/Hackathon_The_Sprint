@@ -17,6 +17,9 @@ body {
     transition: box-shadow 0.3s, transform 0.3s;
     overflow: hidden; 
 }
+#carritoCompras {
+    height: auto;
+}
 
 .card:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);

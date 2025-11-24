@@ -27,7 +27,7 @@ function anadirCarrito(element) {
 
   let nuevoProducto = {
     nombre : nombre,
-    imagen: "." + path,
+    imagen: "./../" + path,
     precioFalso : parseInt(precio.split("$")[1].replace(",", "")) * 1.28,
     precio : parseInt(precio.split("$")[1].replace(",", "")), 
     cantidad: 1
