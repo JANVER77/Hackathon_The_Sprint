@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spring</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar position-relative">
+            <div class=" container-fluid d-flex">
+                <button class="btn-logo navbar-toggler p-0 m-0" data-bs-toggle="offcanvas" data-bs-target="#menuPrincipal">
+                    <img src=" /ASSETS/IMG/logo.png" alt="logo" class="logo navbar-brand m-0 ">
+                </button>
+                
+                <p class="h1 titulo-principal position-absolute start-50 translate-middle-x m-0 w-100 text-center">THE SPRINT</p>
+
+                <a href="./HTML/carrito.html" style="color: black; margin-right: 1rem;"><i class="bi bi-cart-plus fs-1"></i></a>
+                
+            </div>
+        </nav>
+        <div class="menu offcanvas offcanvas-start" id="menuPrincipal">
+            <div class="offcanvas-header">
+                <h5 class="subtitulo">Menú</h5>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="navbar-nav">
+                    <hr>
+                    <li class="subtitulo lsnav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+                    <hr>
+
+                    <li class="subtitulo lsnav-item"><a class="nav-link" href="../HTML/mujer.html">MUJER</a></li>
+                    <li class="subtitulo lsnav-item"><a class="nav-link" href="../HTML/hombre.html">HOMBRES</a></li>
+                    <hr>
+
+                    <li class="subtitulo lsnav-item"><a class="nav-link" href="../HTML/jersey.html">JERSEYS</a></li>
+                    <li class="subtitulo lsnav-item"><a class="nav-link" href="../HTML/pants.html">PANTS</a></li>
+                    <li class="subtitulo lsnav-item"><a class="nav-link" href="../HTML/cascos.html">CASCOS</a></li>                    
+                    <li class="subtitulo lsnav-item"><a class="nav-link" href="../HTML/">GAFAS</a></li>
+                    <li class="subtitulo lsnav-item"><a class="nav-link" href="../HTML/">ZAPATILLAS</a></li>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div id="carouselDefinitivo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="/ASSETS/IMG/fondo1.jpg" class="d-block w-100" alt="Imagen Carrusel 1">
+            
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-3 fw-bold text-white">¡NUEVOS KITS DE INVIERNO!</h1>
+                <p class="lead text-white fw-bold">Domina el frío con nuestra colección térmica.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="/ASSETS/IMG/fondo2.jpg" class="d-block w-100" alt="Imagen Carrusel 2">
+            
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-3 fw-bold text-white">OFERTAS DE LANZAMIENTO</h1>
+                <p class="lead text-white fw-bold">¡30% de Descuento en Cascos Seleccionados!</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="/ASSETS/IMG/fondo3.jpg" class="d-block w-100" alt="Imagen Carrusel 3">
+
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-3 fw-bold text-white">LA LEYENDA CONTINÚA</h1>
+                <p class="lead text-white fw-bold">El único estándar es la perfección.</p>
+            </div>
+        </div>
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDefinitivo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselDefinitivo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+    <!-- ===  SECCIONES DE PRODUCTOS (Segunda tarea de ERI) === -->
+
+<div class="container my-5">
+
+    <!-- Sección de Jerseys -->
+    <div class="articulos my-5">
+        <h2 class="text-left text-dark mt-5 mb-4 fw-bold">INDUMENTARIA: JERSEY</h2>
+        <p class="text-center lead text-secondary"></p>
+        
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="/ASSETS/IMG/jersey1_U.png" class="card-img-top" alt="Foto Producto">
+                    </div>
+                    <div class="contentBox">
+                        <h5 class="card-title">Jersey de Ciclismo KM100 Orgullo</h5>
+                        <h4 class="precio">$150,000</h4>
+                        <a href="#" class="buy" onclick="anadirCarrito(this)">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="/ASSETS/IMG/jersey2_U.png" class="card-img-top" alt="Foto Producto">
+                    </div>
+                    <div class="contentBox">
+                        <h5 class="card-title">Jersey de Ciclismo KM100 Orgullo</h5>
+                        <h4 class="precio">$150,000</h4>
+                        <a href="#" class="buy" onclick="anadirCarrito(this)">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="/ASSETS/IMG/jersey3_U.png" class="card-img-top" alt="Foto Producto">
+                    </div>
+                    <div class="contentBox">
+                        <h5 class="card-title">Jersey de Ciclismo KM100 Orgullo</h5>
+                        <h4 class="precio">$150,000</h4>
+                        <a href="#" class="buy" onclick="anadirCarrito(this)">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="./JS/carrito.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
